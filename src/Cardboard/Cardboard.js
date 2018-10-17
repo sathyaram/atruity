@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Link, Switch } from 'react-router-dom'
-import './Cardboard.css'
+import { Route, Link, Switch } from 'react-router-dom';
+import './Cardboard.css';
 
 class Cardboard extends Component {
   render() {
@@ -16,8 +16,12 @@ class Cardboard extends Component {
         </div>
         <div id="last" className="card">
           <Link to="/planningboard">
-            <h3>Start a <br/> New Planning Board</h3>
-            <div className="icon"><i class="fas fa-plus-circle"></i></div>
+            <h3>
+              Start a <br /> New Planning Board
+            </h3>
+            <div className="icon">
+              <i className="fas fa-plus-circle" />
+            </div>
           </Link>
         </div>
       </div>

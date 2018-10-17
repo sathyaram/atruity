@@ -7,7 +7,9 @@ class Header extends Component {
       <header>
         <section className="left">
           <div className="logo">
-            <a href="/"><img src="../images/atruity_logo.png"/></a>
+            <a href="/">
+              <img src="../images/atruity_logo.png" alt="atruity logo" />
+            </a>
           </div>
           <ul className="main-menu">
             <li>Build</li>
@@ -19,7 +21,9 @@ class Header extends Component {
             <li>Reports</li>
             <li>Toolkit</li>
             <li>Team Boards</li>
-            <li><i class="fas fa-user-circle"></i></li>
+            <li>
+              <i className="fas fa-user-circle" />
+            </li>
           </ul>
         </section>
       </header>
