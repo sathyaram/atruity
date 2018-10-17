@@ -16,11 +16,22 @@
   crossorigin="anonymous"></script>
     <script>
       $( document ).ready(function() {
-    console.log( "ready!" );
-    $('#first').click(function(e) {
-        $('.planningWrapper').fadeToggle()
-      })
-});
+        console.log( "ready!" );
+
+        $('#first').on('click', function(e, err) {
+          $('.planningWrapper').fadeToggle();
+          console.log(err);
+        })
+
+        $('#add').on('click', function(e) {
+          $('table').find('tbody').append($("<td>Goal<select><option>1</option><option>2</option><option>3</option><option>4</option></select><br />Milestone<select><option>1</option><option>2</option><option>3</option><option>4</option></select></td>"));
+          $('table').find('tbody').append($("<td><input type='text' /></td>"));
+          $('table').find('tbody').append($("<td><select><option>Team</option><option>Department</option><option>Company</option></select></td>"));
+          $('table').find('tbody').append($("<td>Members<select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></td>"));
+          $('table').find('tbody').append($("<td><select><option>Q1</option><option>Q2</option><option>Q3</option><option>Q4</option></select>to<select><option>Q1</option><option>Q2</option><option>Q3</option><option>Q4</option></select></td>"));
+          $('table').find('tbody').append($("<td>Status<select><option>Complete</option><option>In Progress</option><option>Incomplete</option></select></td>"));
+        }) 
+      });
     </script>
   </head>
   <body>
