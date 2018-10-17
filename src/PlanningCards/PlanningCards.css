@@ -33,6 +33,10 @@
   transition: all 500ms ease;
 }
 
+.planningCard h3 {
+  font-size:20px;
+}
+
 .planningCard:hover {
   background:#1a1a1a;
   color:white;
@@ -41,4 +45,71 @@
 
 .planningCard:not(:first-child) {
   margin-left:2%;
+}
+
+.planningCardContent {
+  display:flex;
+  background:#f2f2f2;
+  padding:30px;
+  margin-top:30px;
+  flex-wrap:wrap;
+  border-radius:5px;
+}
+
+.planningCardDescription {
+  width:60%;
+}
+
+.planningCardDescription p {
+  padding:25px;
+  background:#fff;
+  font-size:18px;
+  line-height:120%;
+  border-radius:5px;
+}
+
+.planningCardModules {
+  width:35%;
+  margin-left:5%;
+}
+
+.planningCardModules ul {
+  display:flex;
+  flex-direction: column;
+  padding:10px 20px;
+  background:#fff;
+  border-radius:5px;
+}
+
+.planningCardModules ul li {
+  padding:20px 0;
+  font-size:22px;
+}
+
+.planningCardModules ul li:not(:first-child) {
+  border-top:1px solid #eee;
+}
+
+.planningCardContent h4 {
+  font-size:30px;
+  font-weight:bold;
+  padding-bottom:30px;
+}
+
+.planningCardContent .buttons {
+  width:100%;
+  text-align:center;
+  margin-top:30px;
+}
+
+.planningCardContent .buttons a {
+  display:inline-block;
+  background:rgb(211, 71, 71);
+  color:white;
+  padding:15px 35px;
+  margin:0 15px;
+  border-radius:5px;
+  font-weight:normal;
+  font-size:20px;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.3);
 }

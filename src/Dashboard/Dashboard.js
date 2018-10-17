@@ -12,7 +12,7 @@ class Dashboard extends Component {
           <li><a href="#">Current Plan</a></li>
           <li><a href="#">Roadmap</a></li>
         </ul>
-        {/* <Cardboard /> */}
+        <Cardboard />
         <PlanningCards />
       </main>
     );
