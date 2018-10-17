@@ -47,6 +47,10 @@
   margin-left:2%;
 }
 
+.planningWrapper {
+  display:none;
+}
+
 .planningCardContent {
   display:flex;
   background:#f2f2f2;
