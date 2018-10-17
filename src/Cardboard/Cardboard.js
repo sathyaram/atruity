@@ -15,10 +15,10 @@ class Cardboard extends Component {
           <p>Last Updated - 06/10/2018</p>
         </div>
         <div id="last" className="card">
-          <a href="#">
+          <Link to="/planningboard">
             <h3>Start a <br/> New Planning Board</h3>
             <div className="icon"><i class="fas fa-plus-circle"></i></div>
-          </a>
+          </Link>
         </div>
       </div>
     );

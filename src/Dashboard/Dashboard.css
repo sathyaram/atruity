@@ -4,10 +4,8 @@ main {
   padding:20px;
 }
 
-main ul {
-}
 
-main ul li a {
+main ul.dashboard-nav li {
   display: inline-block;
   padding:15px 35px;
   margin-right:25px;
@@ -16,9 +14,10 @@ main ul li a {
   background:#f2f2f2;
   border-radius:5px;
   font-size:18px;
+  color:black;
 }
 
-main ul li a:hover {
+main ul.dashboard-nav li:hover {
   background:#1a1a1a;
   color:white;
 }
