@@ -1,0 +1,29 @@
+.cardGrid {
+  display:flex;
+}
+
+.card a {
+  display:block;
+}
+
+.card {
+  padding:20px;
+  min-height:300px;
+  width:31.333333%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  background:#eee;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  border-radius:5px;
+  text-align:center;
+}
+
+.card:not(:first-child) {
+  margin-left:3%;
+}
+
+.card:last-child {
+  background:#f1f1f1;
+}
