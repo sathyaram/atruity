@@ -51,6 +51,7 @@
 
 .card img {
   margin: 10px 0px;
+  max-width:168px;
 }
 
 .card#last {

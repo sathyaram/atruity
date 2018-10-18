@@ -6,9 +6,12 @@ class PlanningCards extends Component {
   render() {
     function shade() {
       console.log('shade');
+      let planWrap = document.querySelector('.planningWrapper');
       let box = document.querySelector('#first');
       box.style.background = 'black';
       box.style.color = 'white';
+      planWrap.style.visibility = 'visible';
+      planWrap.style.opacity = "1";
     }
 
     return (

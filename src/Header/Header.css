@@ -19,7 +19,12 @@ section.left {
   align-items: center;
 }
 
-ul {
+section ul li:hover {
+  color:#d34747;
+  cursor:pointer;
+}
+
+section ul {
   display: flex;
 }
 

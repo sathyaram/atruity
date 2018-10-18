@@ -14,9 +14,11 @@ main ul.dashboard-nav li {
   border-radius: 5px;
   font-size: 18px;
   color: black;
+  transition: all 200ms ease;
 }
 
 main ul.dashboard-nav li:hover {
   background: #1a1a1a;
   color: white;
+  cursor:pointer;
 }

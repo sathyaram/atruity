@@ -48,7 +48,9 @@
 }
 
 .planningWrapper {
-  display: none;
+  visibility: hidden;
+  opacity:0;
+  transition: all 300ms ease;
 }
 
 .planningCardContent {
