@@ -126,7 +126,7 @@ class PlanBuilder extends Component {
                     </select>
                   </td>
                   <td>
-                    Members
+                    Members:
                     <select>
                       <option>1</option>
                       <option>2</option>
@@ -156,7 +156,7 @@ class PlanBuilder extends Component {
                     </select>
                   </td>
                   <td>
-                    Status
+                    Status: 
                     <select>
                       <option>Complete</option>
                       <option>In Progress</option>
@@ -166,7 +166,7 @@ class PlanBuilder extends Component {
                 </tr>
               </tbody>
             </table>
-            <button id="add" onClick={this.newRow}>+ ADD</button>
+            <button id="add" onClick={this.newRow}>+ Add Row</button>
           </details>
           <details className="plan-tool">
             <summary>3. S.W.O.T Analysis</summary>
