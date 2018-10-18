@@ -180,7 +180,7 @@ class PlanBuilder extends Component {
               <button id="add" onClick={this.newRow}>
                 + Add Row
               </button>
-              <Link to="/planningboard/planbuilder/roadmap">Roadmap</Link>
+              <Link to="/planningboard/planbuilder/roadmap">Update Roadmap</Link>
             </div>
           </details>
           <details className="plan-tool">
@@ -206,7 +206,7 @@ class PlanBuilder extends Component {
             Start with creating your company's mission and work your way down
             the elements of your strategic plan. You can customize your boards
             as need to fit your needs.
-            <br />
+            <br /><br />
             For more information about how to complete this section:
           </p>
           <a href="#">Examples</a>
