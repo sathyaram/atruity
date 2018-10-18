@@ -1,0 +1,9 @@
+.Roadmap {
+  max-width:880px;
+  /* margin:0 auto; */
+}
+
+.Roadmap img {
+  width:100%;
+  height:auto;
+}

@@ -15,10 +15,10 @@ class Roadmap extends Component {
 
   render() {
     return (
-      <div>
+      <div className="Roadmap">
         <img src="/images/progress_bar.png" alt="Progress bar" />
         <br />
-        <img src="/images/roadmap.png" alt="Roadmap" />
+        <img src="/images/roadmap.png" alt="Roadmap" id="roadmapImage" />
       </div>
     );
   }
