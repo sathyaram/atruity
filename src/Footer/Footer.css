@@ -1,0 +1,31 @@
+footer {
+  height:30vh;
+  background:#d34747;
+  display:flex;
+  padding:30px;
+  align-items:center;
+  justify-content: space-between;
+}
+
+footer .footerName {
+  color:white;
+  font-size:40px;
+  font-weight:bold;
+}
+
+footer .footerMenu {
+  display:flex;
+}
+
+footer .footerMenu ul {
+  padding:0 20px;
+}
+
+footer .footerMenu ul li:first-child {
+  font-weight:bold;
+}
+
+footer .footerMenu ul li {
+  padding:5px 0;
+  color:white;
+}

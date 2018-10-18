@@ -7,8 +7,9 @@ class Header extends Component {
       <header>
         <section className="left">
           <div className="logo">
-            <a href="/">
+            <a className="logo-link" href="/">
               <img src="../images/atruity_logo.png" alt="atruity logo" />
+              <h1>Atruity</h1>
             </a>
           </div>
           <ul className="main-menu">

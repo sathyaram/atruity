@@ -9,9 +9,20 @@ header {
 }
 
 header .logo img {
-  height: 70px;
+  height: 50px;
   width: auto;
-  margin-right: 30px;
+  margin-right: 15px;
+}
+
+header .logo-link {
+  display:flex;
+  align-items:center;
+}
+
+header .logo-link h1 {
+  font-size:36px;
+  font-weight:800;
+  color:black;
 }
 
 section.left {
@@ -29,7 +40,8 @@ section ul {
 }
 
 ul.main-menu {
-  font-size: 26px;
+  font-size: 23px;
+  padding-left:30px;
   text-transform: uppercase;
 }
 
