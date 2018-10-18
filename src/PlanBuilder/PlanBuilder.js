@@ -3,10 +3,16 @@ import './PlanBuilder.css';
 
 class PlanBuilder extends Component {
 
-    newRow() {
-        const addedRow = document.querySelector('tbody')
-        console.log(addedRow);
-        const newRow = `
+  removeRow() {
+    var table = document.querySelector('.plan-table');
+    var rowCount = table.rows.length;
+    table.deleteRow(rowCount -1);
+  }
+  
+  newRow() {
+    const addedRow = document.querySelector('tbody');
+    console.log(addedRow);
+    const newRow = `
             <tr>
                 <td>
                 Goal
@@ -24,7 +30,7 @@ class PlanBuilder extends Component {
                     <option>3</option>
                     <option>4</option>
                 </select>
-                <button className="remove">-</button>
+                <button onClick="removeRow()" className="remove">- Remove</button>
                 </td>
                 <td>
                 <input type="text" />
@@ -75,22 +81,21 @@ class PlanBuilder extends Component {
                 </select>
                 </td>
             </tr>`;
-        addedRow.insertAdjacentHTML("beforeend", newRow)
-    }
+    addedRow.insertAdjacentHTML('beforeend', newRow);
+  }
 
   render() {
     return (
       <div className="planBuilder">
-        
         <section>
-        <img src="/images/progress_bar.png" alt="Progress bar" />
+          <img src="/images/progress_bar.png" alt="Progress bar" />
           <details className="plan-tool">
             <summary>1. Mission/Values/Vision</summary>
           </details>
           <details className="plan-tool">
             <summary>2. Objectives/Goals</summary>
-            <table>
-              <tbody className="plan-table">
+            <table className="plan-table">
+              <tbody>
                 <tr>
                   <th>Label</th>
                   <th>Description</th>
@@ -116,8 +121,8 @@ class PlanBuilder extends Component {
                       <option>3</option>
                       <option>4</option>
                     </select>
-                    <br></br>
-                    <button className="remove">- Remove Row</button>
+                    <br />
+                    <button onClick={this.removeRow} className="remove">- Remove</button>
                   </td>
                   <td>
                     <input type="text" />
@@ -160,7 +165,7 @@ class PlanBuilder extends Component {
                     </select>
                   </td>
                   <td>
-                    Status: 
+                    Status:
                     <select>
                       <option>Complete</option>
                       <option>In Progress</option>
@@ -170,7 +175,9 @@ class PlanBuilder extends Component {
                 </tr>
               </tbody>
             </table>
-            <button id="add" onClick={this.newRow}>+ Add Row</button>
+            <button id="add" onClick={this.newRow}>
+              + Add Row
+            </button>
           </details>
           <details className="plan-tool">
             <summary>3. S.W.O.T Analysis</summary>
@@ -190,9 +197,12 @@ class PlanBuilder extends Component {
         </section>
         <aside>
           <h3>Tip</h3>
-          <p>We've created the strategic planning boards to get you started.
-            Start with creating your company's mission and work your way down the elements of your strategic plan.
-            You can customize your boards as need to fit your needs.<br></br>
+          <p>
+            We've created the strategic planning boards to get you started.
+            Start with creating your company's mission and work your way down
+            the elements of your strategic plan. You can customize your boards
+            as need to fit your needs.
+            <br />
             For more information about how to complete this section:
           </p>
           <a href="#">Examples</a>

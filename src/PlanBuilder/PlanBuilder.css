@@ -25,6 +25,10 @@
    padding-top:20px;
 }
 
+.planBuilder button.remove {
+    margin-top:15px;
+}
+
 .planBuilder aside a {
     display:inline-block;
     padding:10px;
