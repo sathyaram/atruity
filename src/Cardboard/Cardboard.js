@@ -8,10 +8,12 @@ class Cardboard extends Component {
       <div className="cardGrid">
         <div className="card">
           <h3>Our Strategic Plan for AY 2018</h3>
+          <img src="/images/dash_2.png"></img>
           <p>Last Updated - 06/10/2018</p>
         </div>
         <div className="card">
           <h3>Our Strategic Plan for AY 2018</h3>
+          <img src="/images/dash_1.png"></img>
           <p>Last Updated - 06/10/2018</p>
         </div>
         <div id="last" className="card">

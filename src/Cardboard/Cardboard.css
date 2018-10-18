@@ -28,3 +28,7 @@
 .card:last-child {
   background: #f1f1f1;
 }
+
+.card img {
+  margin: 10px 0px;
+}
