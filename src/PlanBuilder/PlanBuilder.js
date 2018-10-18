@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
 import './PlanBuilder.css';
 
 class PlanBuilder extends Component {
@@ -175,9 +176,12 @@ class PlanBuilder extends Component {
                 </tr>
               </tbody>
             </table>
-            <button id="add" onClick={this.newRow}>
-              + Add Row
-            </button>
+            <div class="planBuilderButtons">
+              <button id="add" onClick={this.newRow}>
+                + Add Row
+              </button>
+              <Link to="/planningboard/planbuilder/roadmap">Roadmap</Link>
+            </div>
           </details>
           <details className="plan-tool">
             <summary>3. S.W.O.T Analysis</summary>

@@ -80,6 +80,20 @@ button#add {
     color:white;
     font-weight:bold;
     font-size:14px;
+    border-radius:5px;
+}
+
+.planBuilderButtons {
+    display:flex;
+    justify-content: space-between;
+}
+
+.planBuilderButtons a {
+    display:inline-block;
+    background:#d34747;
+    color:white;
+    padding:10px;
+    border-radius:5px;
 }
 
 .plan-tool {
