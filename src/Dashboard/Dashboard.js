@@ -8,10 +8,10 @@ import './Dashboard.css';
 
 class Dashboard extends Component {
   componentDidMount() {
-    const selected = document.querySelector('.dashboardLink')
-    selected.style.background = "black"
-    selected.style.color = "white"
-}
+    const selected = document.querySelector('.dashboardLink');
+    selected.style.background = 'black';
+    selected.style.color = 'white';
+  }
 
   render() {
     return (
@@ -24,8 +24,14 @@ class Dashboard extends Component {
           <li className="roadmapLink">Roadmap</li>
         </ul>
         <Switch>
-          <Route path="/planningboard/planbuilder/roadmap" render={() => <Roadmap />}/>
-          <Route path="/planningboard/planbuilder" render={() =><PlanBuilder />} />
+          <Route
+            path="/planningboard/planbuilder/roadmap"
+            render={() => <Roadmap />}
+          />
+          <Route
+            path="/planningboard/planbuilder"
+            render={() => <PlanBuilder />}
+          />
           <Route path="/planningboard" render={() => <PlanningCards />} />
           <Route path="/" render={() => <Cardboard />} />
         </Switch>

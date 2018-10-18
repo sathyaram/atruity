@@ -20,5 +20,5 @@ main ul.dashboard-nav li {
 main ul.dashboard-nav li:hover {
   background: #1a1a1a;
   color: white;
-  cursor:pointer;
+  cursor: pointer;
 }

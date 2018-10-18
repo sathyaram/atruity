@@ -1,104 +1,103 @@
 .planBuilder {
-    display:flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .planBuilder section {
-    width:75%;
+  width: 75%;
 }
 
 .planBuilder aside {
-    width:22%;
-    padding:30px;
-    background:#f2f2f2;
-    display:flex;
-    flex-direction: column;
+  width: 22%;
+  padding: 30px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 .planBuilder aside h3 {
-    font-weight:bold;
-    font-size:28px;
-    text-align:center;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
 }
 
 .planBuilder aside p {
-   padding-top:20px;
+  padding-top: 20px;
 }
 
 .planBuilder button.remove {
-    margin-top:15px;
+  margin-top: 15px;
 }
 
 .planBuilder aside a {
-    display:inline-block;
-    padding:10px;
-    background:#d34747;
-    color:white;
-    margin-top:15px;
-    width:125px;
-    text-align:center;
- }
+  display: inline-block;
+  padding: 10px;
+  background: #d34747;
+  color: white;
+  margin-top: 15px;
+  width: 125px;
+  text-align: center;
+}
 
 .planBuilder img {
-    margin: 20px 0;
-    max-width: 900px;
-    width: 100%;
+  margin: 20px 0;
+  max-width: 900px;
+  width: 100%;
 }
 
 .planBuilder table {
-    width:100%;
-    margin:20px 0;
+  width: 100%;
+  margin: 20px 0;
 }
 
 .planBuilder tbody {
-    width:100%;
+  width: 100%;
 }
 
 .planBuilder table * {
-    border:1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 .planBuilder table th {
-    background:#d34747;
-    color:white;
-    padding:5px 0;
+  background: #d34747;
+  color: white;
+  padding: 5px 0;
 }
 
 .planBuilder table td {
-    vertical-align: center;
-    text-align:center;
-    background: #fff;
-    padding: 15px;
-    
+  vertical-align: center;
+  text-align: center;
+  background: #fff;
+  padding: 15px;
 }
 
 button#add {
-    border:none;
-    outline:none;
-    padding:5px 15px;
-    background:#2c2c2c;
-    color:white;
-    font-weight:bold;
-    font-size:14px;
-    border-radius:5px;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  background: #2c2c2c;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
 }
 
 .planBuilderButtons {
-    display:flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .planBuilderButtons a {
-    display:inline-block;
-    background:#fff;
-    color:black;
-    border:1px solid black;
-    padding:10px 15px;
-    border-radius:5px;
+  display: inline-block;
+  background: #fff;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .plan-tool {
-    background: #ddd;
-    padding: 15px;
-    margin-bottom: 5px;
+  background: #ddd;
+  padding: 15px;
+  margin-bottom: 5px;
 }

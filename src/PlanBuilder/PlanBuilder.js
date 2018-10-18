@@ -3,28 +3,26 @@ import { Route, Link, Switch } from 'react-router-dom';
 import './PlanBuilder.css';
 
 class PlanBuilder extends Component {
-
   componentDidMount() {
-    const selected = document.querySelector('.currentPlanLink')
-    selected.style.background = "black"
-    selected.style.color = "white"
-    const unselected = document.querySelector('.dashboardLink')
-    unselected.style.background = "#f2f2f2"
-    unselected.style.color = "black"
-}
-componentWillUnmount() { 
-    const selected = document.querySelector('.currentPlanLink')
-    selected.style.background = "#f2f2f2"
-    selected.style.color = "black"
-}
-
+    const selected = document.querySelector('.currentPlanLink');
+    selected.style.background = 'black';
+    selected.style.color = 'white';
+    const unselected = document.querySelector('.dashboardLink');
+    unselected.style.background = '#f2f2f2';
+    unselected.style.color = 'black';
+  }
+  componentWillUnmount() {
+    const selected = document.querySelector('.currentPlanLink');
+    selected.style.background = '#f2f2f2';
+    selected.style.color = 'black';
+  }
 
   removeRow() {
     var table = document.querySelector('.plan-table');
     var rowCount = table.rows.length;
-    table.deleteRow(rowCount -1);
+    table.deleteRow(rowCount - 1);
   }
-  
+
   newRow() {
     const addedRow = document.querySelector('tbody');
     console.log(addedRow);
@@ -138,7 +136,9 @@ componentWillUnmount() {
                       <option>4</option>
                     </select>
                     <br />
-                    <button onClick={this.removeRow} className="remove">- Remove</button>
+                    <button onClick={this.removeRow} className="remove">
+                      - Remove
+                    </button>
                   </td>
                   <td>
                     <input type="text" />
@@ -195,7 +195,9 @@ componentWillUnmount() {
               <button id="add" onClick={this.newRow}>
                 + Add Row
               </button>
-              <Link to="/planningboard/planbuilder/roadmap">Update Roadmap</Link>
+              <Link to="/planningboard/planbuilder/roadmap">
+                Update Roadmap
+              </Link>
             </div>
           </details>
           <details className="plan-tool">
@@ -221,7 +223,8 @@ componentWillUnmount() {
             Start with creating your company's mission and work your way down
             the elements of your strategic plan. You can customize your boards
             as need to fit your needs.
-            <br /><br />
+            <br />
+            <br />
             For more information about how to complete this section:
           </p>
           <a href="#">Examples</a>

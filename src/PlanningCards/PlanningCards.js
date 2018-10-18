@@ -11,7 +11,7 @@ class PlanningCards extends Component {
       box.style.background = 'black';
       box.style.color = 'white';
       planWrap.style.visibility = 'visible';
-      planWrap.style.opacity = "1";
+      planWrap.style.opacity = '1';
     }
 
     return (
