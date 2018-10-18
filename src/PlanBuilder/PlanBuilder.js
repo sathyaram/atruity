@@ -24,6 +24,7 @@ class PlanBuilder extends Component {
                     <option>3</option>
                     <option>4</option>
                 </select>
+                <button className="remove">-</button>
                 </td>
                 <td>
                 <input type="text" />
@@ -114,6 +115,8 @@ class PlanBuilder extends Component {
                       <option>3</option>
                       <option>4</option>
                     </select>
+                    <br></br>
+                    <button className="remove">- Remove Row</button>
                   </td>
                   <td>
                     <input type="text" />
