@@ -81,8 +81,9 @@ class PlanBuilder extends Component {
   render() {
     return (
       <div className="planBuilder">
-        <img src="/images/progress_bar.png" alt="Progress bar" />
+        
         <section>
+        <img src="/images/progress_bar.png" alt="Progress bar" />
           <details className="plan-tool">
             <summary>1. Mission/Values/Vision</summary>
           </details>
@@ -187,6 +188,17 @@ class PlanBuilder extends Component {
             <summary>7. Review Draft</summary>
           </details>
         </section>
+        <aside>
+          <h3>Tip</h3>
+          <p>We've created the strategic planning boards to get you started.
+            Start with creating your company's mission and work your way down the elements of your strategic plan.
+            You can customize your boards as need to fit your needs.<br></br>
+            For more information about how to complete this section:
+          </p>
+          <a href="#">Examples</a>
+          <a href="#">Tutorials</a>
+          <a href="#">Templates</a>
+        </aside>
       </div>
     );
   }
