@@ -4,6 +4,21 @@ import './PlanBuilder.css';
 
 class PlanBuilder extends Component {
 
+  componentDidMount() {
+    const selected = document.querySelector('.currentPlanLink')
+    selected.style.background = "black"
+    selected.style.color = "white"
+    const unselected = document.querySelector('.dashboardLink')
+    unselected.style.background = "#f2f2f2"
+    unselected.style.color = "black"
+}
+componentWillUnmount() { 
+    const selected = document.querySelector('.currentPlanLink')
+    selected.style.background = "#f2f2f2"
+    selected.style.color = "black"
+}
+
+
   removeRow() {
     var table = document.querySelector('.plan-table');
     var rowCount = table.rows.length;

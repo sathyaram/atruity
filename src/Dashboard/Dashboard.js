@@ -7,15 +7,21 @@ import Roadmap from '../Roadmap/Roadmap';
 import './Dashboard.css';
 
 class Dashboard extends Component {
+  componentDidMount() {
+    const selected = document.querySelector('.dashboardLink')
+    selected.style.background = "black"
+    selected.style.color = "white"
+}
+
   render() {
     return (
       <main>
         <ul className="dashboard-nav">
           <Link to="/">
-            <li>Dashboard</li>
+            <li className="dashboardLink"> Dashboard</li>
           </Link>
-          <li>Current Plan</li>
-          <li>Roadmap</li>
+          <li className="currentPlanLink">Current Plan</li>
+          <li className="roadmapLink">Roadmap</li>
         </ul>
         <Switch>
           <Route path="/planningboard/planbuilder/roadmap" render={() => <Roadmap />}/>
